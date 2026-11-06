@@ -10,7 +10,6 @@ export function Logo({
   return (
     <a
       href="#top"
-      aria-label="AirLink home"
       className={cn(
         "group inline-flex items-center gap-2.5 rounded-xl focus-visible:outline-offset-4",
         className,

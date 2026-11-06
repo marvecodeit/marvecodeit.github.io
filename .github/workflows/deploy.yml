@@ -50,6 +50,8 @@ jobs:
           cp -R dist/. _site/airlink/
           cp deploy/root-index.html _site/index.html
           cp deploy/404.html _site/404.html
+          cp public/robots.txt _site/robots.txt
+          cp public/sitemap.xml _site/sitemap.xml
           touch _site/.nojekyll
 
       - name: Upload Pages artifact
