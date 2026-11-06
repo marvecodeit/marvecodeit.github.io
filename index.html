@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AirLink — The missing link between Wi-Fi and the internet</title>
+    <meta
+      name="description"
+      content="AirLink is a native macOS utility that detects captive portals, opens the network's real sign-in page in a secure built-in browser, and verifies your Mac actually has internet access."
+    />
+    <meta name="author" content="marvecodeit" />
+    <meta name="robots" content="index, follow" />
+    <meta name="color-scheme" content="light dark" />
+
+    <link rel="canonical" href="https://marvecodeit.github.io/airlink/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AirLink" />
+    <meta property="og:title" content="AirLink — Captive portals, handled." />
+    <meta
+      property="og:description"
+      content="Detect captive portals, sign in through a secure built-in browser, and verify your Mac is really online. A native macOS utility by marvecodeit."
+    />
+    <meta property="og:url" content="https://marvecodeit.github.io/airlink/" />
+    <meta
+      property="og:image"
+      content="https://marvecodeit.github.io/airlink/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="AirLink for macOS — the missing link between Wi-Fi and the internet."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AirLink — Captive portals, handled." />
+    <meta
+      name="twitter:description"
+      content="A native macOS utility that detects captive portals, opens the real sign-in page, and verifies your internet connection."
+    />
+    <meta
+      name="twitter:image"
+      content="https://marvecodeit.github.io/airlink/og-image.png"
+    />
+
+    <meta name="theme-color" content="#f6f8fa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a110d" media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%BASE_URL%icon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%BASE_URL%apple-touch-icon.png" />
+    <link rel="manifest" href="%BASE_URL%site.webmanifest" />
+
+    <script>
+      // Apply the saved appearance before the first paint to avoid a flash.
+      (function () {
+        try {
+          var stored = localStorage.getItem("airlink-theme");
+          var dark = stored
+            ? stored === "dark"
+            : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.classList.toggle("dark", dark);
+          document.documentElement.style.colorScheme = dark ? "dark" : "light";
+        } catch (_) {
+          /* appearance preference is optional */
+        }
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AirLink",
+        "operatingSystem": "macOS 12 or later",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "A native macOS captive portal assistant that detects sign-in portals, opens the network's real sign-in page in a secure built-in browser, and verifies system-wide internet access.",
+        "url": "https://marvecodeit.github.io/airlink/",
+        "downloadUrl": "https://github.com/marvecodeit/AirLink/releases/latest",
+        "license": "https://github.com/marvecodeit/AirLink/blob/main/LICENSE",
+        "isAccessibleForFree": true,
+        "author": {
+          "@type": "Person",
+          "name": "marvecodeit",
+          "url": "https://github.com/marvecodeit"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
