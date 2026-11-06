@@ -12,7 +12,7 @@ const items = [
   {
     icon: EyeOff,
     title: "No analytics, no telemetry",
-    copy: "Nothing is collected or sent anywhere. Your network details stay on your Mac.",
+    copy: "AirLink has no analytics service and no telemetry. Network details are read locally and stay on your Mac.",
   },
   {
     icon: KeyRound,
